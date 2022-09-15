@@ -14,8 +14,6 @@ const App = () => {
       setPage(1);
       setPrevGallery([]);
     }
-    console.log(pictureName);
-
     setSearch(pictureName);
   };
   const onLoadMore = e => {

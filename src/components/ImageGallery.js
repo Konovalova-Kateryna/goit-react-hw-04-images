@@ -25,8 +25,6 @@ const ImageGallery = ({ search, page, loadMore }) => {
       try {
         setStatus('pending');
         const newGallery = await getGallery(search, page);
-
-        console.log(newGallery);
         if (newGallery.total === 0 || newGallery.hits.length === 0) {
           setStatus('rejected');
           return;

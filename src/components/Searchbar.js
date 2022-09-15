@@ -7,8 +7,6 @@ const initialValues = { searchParam: '' };
 
 const Searchbar = ({ onSubmit, searchParam }) => {
   const handleSubmit = (value, { resetForm }) => {
-    console.log(value.searchParam);
-
     if (value.searchParam.trim() === '') {
       toast.error('Please specify your search query.');
       resetForm();
